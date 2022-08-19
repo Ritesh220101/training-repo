@@ -1,0 +1,25 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class CustomerTest {
+	Product product = new Product(1, "pepsi", 100, 0.1f);
+	LineItem lineItem = new LineItem(1, 2, product);
+	
+
+	@Test
+	void testCalculatePriceAfterDiscount() {
+		double expected = 90;
+		double actual = Math.ceil(product.calculatePriceAfterDiscount());
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testCalculateLineItemCost() {
+		double expected = 480;
+		double actual = Math.ceil(lineItem.calculateLineItemCost());
+		assertEquals(expected, actual);
+	}
+}

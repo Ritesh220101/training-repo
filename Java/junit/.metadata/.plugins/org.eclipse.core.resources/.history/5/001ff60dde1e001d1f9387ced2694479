@@ -1,0 +1,13 @@
+package com.aurionpro.model;
+
+import org.junit.jupiter.api.Test;
+
+public class CustomerTest {
+	Product product = new Product(1, "ritz", 1000, 0.1f);
+	
+	@Test
+	void testCalculatePriceAfterDiscount() {
+		double expected = 900;
+		double
+	}
+}

@@ -1,0 +1,18 @@
+package com.aurionpro.model;
+
+public class StringUtil {
+	public String truncateAInFirst2Place(String str) {
+		str = str.toUpperCase();
+		if(str.charAt(0)=='A') {
+			str = str.substring(1);
+		}
+		
+	}
+	
+	public boolean firstAndLastTwoCharAreEqual(String str) {
+		if(str.charAt(0)+str.charAt(1) == str.charAt(str.length()-1)+str.charAt(str.length()-2))
+			return true;
+		return false;
+		
+	}
+}

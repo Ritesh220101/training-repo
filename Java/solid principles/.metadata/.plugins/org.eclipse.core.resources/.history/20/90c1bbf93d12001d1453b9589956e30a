@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public class VarArg {
+	public void print(String...values) {
+		for(String s:values) {
+			System.out.println(s);
+		}
+	}
+}

@@ -1,0 +1,15 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class StringUtilTest {
+	StringUtil su = new StringUtil();
+	@Test
+	void testTruncateAInFirst2Place() {
+		String expected = "BCD"
+		String actual = su.truncateAInFirst2Place("ABCD");
+		assertEquals(expected, actual);
+	}
+}

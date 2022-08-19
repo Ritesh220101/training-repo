@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class AccessModifiers {
+	private static void privatePrint() {
+		System.out.println("Printing private method");
+	}
+	
+	public static void main(String[] args) {
+		privatePrint();
+	}
+}

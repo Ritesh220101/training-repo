@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public class StringUtilTest {
+	public static void main(String[] args) {
+		StringUtil su = new StringUtil();
+//		System.out.println(su.truncateAInFirst2Place("babc"));
+		System.out.println(su.firstAndLastTwoCharAreEqual("abcd"));
+	}
+}

@@ -1,0 +1,23 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
+public class StringUtilTest {
+	StringUtil su = new StringUtil();
+	@Test
+	void testTruncateAInFirst2Place() {
+		String expected = "BCD";
+		String actual = su.truncateAInFirst2Place("AABCD");
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testFirstAndLastTwoCharAreEqual() {
+		boolean expected = true;
+		boolean actual = su.firstAndLastTwoCharAreEqual("ABBBA");
+		assertTrue(expected==actual);
+	}
+}

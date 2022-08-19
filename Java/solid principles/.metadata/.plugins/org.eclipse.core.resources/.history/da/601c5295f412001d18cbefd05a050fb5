@@ -1,0 +1,21 @@
+package com.aurionpro.model;
+
+public class Department {
+	Developer dev;
+	Manager man;
+	
+	
+	
+	public Department(Developer dev, Manager man) {
+		super();
+		this.dev = dev;
+		this.man = man;
+	}
+
+
+
+	public void work() {
+		dev.working();
+		man.working();
+	}
+}

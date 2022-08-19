@@ -1,0 +1,52 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class MathUtilTest {
+	MathUtil mu;
+
+//	@Test
+//	void test() {
+//		System.out.println("Hello world!");
+//		fail("This test failed!!");
+//	}
+
+	@BeforeAll
+	void beforeAll() {
+		System.out.println("Printing before all...");
+	}
+	
+	@BeforeEach
+	void beforeEach() {
+		mu = new MathUtil();
+		System.out.println("Printing before each...");
+	}
+	
+	@Test
+	void testAddNumber_checkPositiveInteger() {// method name should start by test then the method name
+		int expected = 10;
+		int actual = mu.addNumber(5, 5);
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testAddNumber_checkPositiveIntegerAndZero() {
+		int expected = 5;
+		int actual = mu.addNumber(5, 0);
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testAddNumber_checkNegativeInteger() {
+		int expected = -10;
+		int actual = mu.addNumber(-2, -5);
+		assertEquals(expected, actual);
+	}
+}

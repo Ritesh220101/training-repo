@@ -1,0 +1,9 @@
+package com.aurionpro.test;
+
+public class VarArgTest {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

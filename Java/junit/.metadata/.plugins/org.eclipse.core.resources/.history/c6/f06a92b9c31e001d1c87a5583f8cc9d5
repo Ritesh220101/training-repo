@@ -1,0 +1,30 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class MathUtilTest {
+	MathUtil mu = new MathUtil();
+
+	@Test
+	void test() {
+//		System.out.println("Hello world!");
+//		fail("This test failed!!");
+	}
+
+	@Test
+	void testAddNumber_checkPositiveInteger() {// method name should start by test then the method name
+		mu.addNumber(10, 20);
+	}
+
+	void testAddNumber_checkPositiveIntegerAndZero() {
+
+	}
+
+	void testAddNumber_checkNegativeInteger() {
+
+	}
+}

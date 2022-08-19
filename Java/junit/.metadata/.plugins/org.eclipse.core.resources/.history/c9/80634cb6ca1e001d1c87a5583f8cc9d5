@@ -1,0 +1,16 @@
+package com.aurionpro.model;
+
+public class StringUtil {
+	public String truncateAInFirst2Place(String str) {
+		str = str.toUpperCase();
+		String temp="";
+		if(str.charAt(0)=='A') {
+			str = str.substring(1);
+		}
+		if(str.charAt(0)=='A') {
+			str = str.substring(1);
+		}
+		return temp;
+		
+	}
+}

@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+public class Default {
+
+	public static void main(String[] args) {
+		AccessModifiers acm = new AccessModifiers();
+		acm.defaultPrint();
+	}
+
+}
